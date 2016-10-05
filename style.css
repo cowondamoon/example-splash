@@ -7,6 +7,9 @@ body{
     background: #000;
 }
 
+.next-logo{
+	display:none;
+}
 
 .site-wrapper-inner {
     /*background: url(img/JoeBiden.jpg);
@@ -208,6 +211,26 @@ p.paid {
 	
 	.jumbotron {
 		padding-bottom: 70px;
+	}
+	
+	img.logo {
+		display: none;
+	}
+	
+	.next-logo img {
+		width: 100%;
+	}
+	
+	.next-logo {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0px;
+		margin-top: 13%;
+		float: right;
+		/* margin-left: 20%; */
+		width: 55%;
+		margin-right: 8%;
 	}
 	
 	
