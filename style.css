@@ -200,6 +200,7 @@ p.paid {
 @media screen and (max-width: 899px) {
 	.container.in-jumbo {
 		position: relative;
+		width: 100%;
 	}
 	input {
 		width: 240px;
