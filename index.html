@@ -15,7 +15,8 @@
 	<link href="css/cover.css" rel="stylesheet">
 	<link href="css/jumbotron.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	
+
+
 	<script src="https://use.fontawesome.com/c0b00164ce.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,29 +25,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	<script>
- $(function() {
-	if(!$.support.placeholder) { 
-		var active = document.activeElement;
-		$(':text').focus(function () {
-			if ($(this).attr('placeholder') != '' && $(this).val() == $(this).attr('placeholder')) {
-				$(this).val('').removeClass('hasPlaceholder');
-			}
-		}).blur(function () {
-			if ($(this).attr('placeholder') != '' && ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))) {
-				$(this).val($(this).attr('placeholder')).addClass('hasPlaceholder');
-			}
-		});
-		$(':text').blur();
-		$(active).focus();
-		$('form').submit(function () {
-			$(this).find('.hasPlaceholder').each(function() { $(this).val(''); });
-		});
-	}
-});
-	</script>
-	
+
+
+
   </head>
   <body>
     <div class="site-wrapper">
@@ -60,7 +41,8 @@
 			  <div class="container in-jumbo">
 				<img src="img/logo.png" class="logo" />
 				<h1 class="cover-heading">Join the team</h1>
-				<input type="email" id="inputEmail" class="form-control hasPlaceholder" placeholder="Email address"><br class="next-br"><input type="text" id="zip" class="form-control" placeholder="Zip code">
+
+				<input type="email" id="inputEmail" class="form-control" placeholder="Email address"><br class="next-br"><input type="text" id="zip" class="form-control" placeholder="Zip code">
 				<p class="lead">
 				  <a href="#" class="btn btn-lg btn-default sign">SIGN UP</a><br/>
 				  or<br/>
@@ -121,6 +103,9 @@
       </div>
 
     </div>
+	
+		<script src="js/placeholders.min.js"></script>
+		
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
