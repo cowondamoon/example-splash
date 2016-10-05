@@ -3,6 +3,10 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
+.hasPlaceholder {
+     color: #aaa;
+}
+
 .jumbotron {
     background: #000;
 }
